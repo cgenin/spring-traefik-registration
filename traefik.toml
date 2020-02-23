@@ -1,0 +1,27 @@
+defaultEntryPoints = ["http"]
+
+[entryPoints]
+  [entryPoints.http]
+    address = "127.0.0.1:7979"
+
+[providers]
+  [providers.rest]
+    insecure = true
+  [providers.file]
+    directory = "/Users/christophegenin/IdeaProjects/spring-traefik-registration/configuration"
+    #directory = "configuration"
+    watch = true
+
+[api]
+  insecure = true
+  dashboard = true
+  debug = true
+
+[log]
+  level = "INFO"
+  filePath = "traefik.log"
+
+[accessLog]
+    filePath = "access.log"
+    bufferingSize = 100
+

@@ -1,0 +1,20 @@
+{
+  "loadBalancer": {
+    "servers": [
+      {
+        "url": "http://127.0.0.1:7978/test-services"
+      }
+    ],
+    "passHostHeader": true
+  },
+  "status": "enabled",
+  "usedBy": [
+    "Router-test-services@file"
+  ],
+  "serverStatus": {
+    "http://127.0.0.1:7978/test-services": "UP"
+  },
+  "name": "test-services@file",
+  "provider": "file",
+  "type": "loadbalancer"
+}
